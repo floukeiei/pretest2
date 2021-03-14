@@ -1,0 +1,9 @@
+<input type="text" #search>
+<table *ngIf="data$">
+    <tr>
+        <th>col1</th>
+    </tr>
+    <tr *ngFor="let item of   data$ | async" >
+        <td>{{item}}</td>
+    </tr>
+</table>
